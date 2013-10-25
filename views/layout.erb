@@ -1,11 +1,29 @@
-<% title="Songs by Sinatra" %>
+<% title="Born Every Minute" %>
 <!doctype html>
 <html lang="en">
+
 <head>
   <title><%= title %></title>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.13.0/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" type="tes/css" href="css/styles.css">
 </head>
+
 <body>
-  <p>This is a layout</p>
+  <div id="container">
+    <div class="header">
+      Born Every Minute
+    </div>
+
+    <div class="break"></div>
+
+    <%=  yield %>
+
+  </div>
+  <div class="break_100"></div>
+
+  <div id="footer">
+    Copyright @ 2013 The Long Con LLC
+  </div>
 </body>
 </html>

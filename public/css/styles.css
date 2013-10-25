@@ -1,0 +1,105 @@
+html {
+  background-color: #FFFFF0;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #666666;
+  font-size: 120%;
+}
+
+#container {
+  padding: 8%;
+}
+
+h1 {
+  width: 60%;
+  font-size: 375%;
+  float: left;
+}
+
+img {
+  width: 38%;
+  padding-left: 2%
+}
+
+table {
+  width: 95%;
+  border: 2px solid black;
+}
+
+th {
+  border-left: 2px solid black;
+  background-color: #83E7CB;
+}
+
+td {
+  border-left: 2px solid black;
+}
+
+form {
+  width: 100%;
+  background-color: #83E7CB;
+  padding: 1%;
+}
+
+input {
+  float: left;
+  padding: 0.5%;
+  margin: 2%;
+}
+
+input#name {
+  width: 94%;
+}
+
+input#email, input#twitter {
+  width: 48%;
+}
+
+input[type="submit"] {
+
+}
+
+p {
+  padding-bottom: 5%
+}
+
+div {
+  float: left;
+}
+
+div .content {
+  width: 60%
+}
+
+div .header {
+  width: 60%;
+  font-style: italic;
+  font-size: 225%;
+}
+
+div .break {
+  width: 50%;
+  padding: 2% 0%;
+}
+
+div .break_100 {
+  width: 100%;
+  padding: 2% 0%;
+}
+
+div .form {
+  width: 98%;
+}
+
+#footer {
+  position: relative;
+  bottom: 2%;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
