@@ -6,21 +6,22 @@
   <title><%= title %></title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.13.0/build/cssreset/cssreset-min.css">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="tes/css" href="css/styles.css">
 </head>
 
 <body>
   <div id="container">
-    <div class="header">
-      Born Every Minute
+    <div id="content">
+      <div class="header">
+        Born Every Minute
+      </div>
+
+      <div class="break"></div>
+
+      <%=  yield %>
     </div>
-
-    <div class="break"></div>
-
-    <%=  yield %>
-
   </div>
-  <div class="break_100"></div>
 
   <div id="footer">
     Copyright @ 2013 The Long Con LLC
