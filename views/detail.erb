@@ -3,7 +3,7 @@
 <div class="break"></div>
 
 <div class="content">
-  <p>Click anywhere on a row to see details</p>
+  <p><a href='/suckers'>Return to listing</a></p>
 </div>
 
 <div class="break"></div>
@@ -12,8 +12,8 @@
   <th>Name</th>
   <th>Email</th>
   <th>Twitter</th>
-  <!-- When form submits, add Ruby code to generate new table row -->
-  <tr onclick="location.href='/detail'">**
+  <!-- populate one row only -->
+  <tr>
     <td><%= @name %></td>
     <td><%= @email %></td>
     <td><%= @twitter %></td>
