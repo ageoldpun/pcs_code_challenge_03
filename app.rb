@@ -1,21 +1,21 @@
 # app.rb
 require 'sinatra'
 require 'pry'
-
-configure do
-  @@name = 'name'
-  @@email = 'email'
-  @@twitter = 'twitter'
-end
+enable :sessions
 
 get '/' do
   erb :index
 end
 
 post '/' do
-  @@name = params[:fullname]
-  @@email = params[:email]
-  @@twitter = params[:twitter]
+  @name = params[:fullname]
+  @email = params[:email]
+  @twitter = params[:twitter]
+  session[:value] = [
+    { name: @name },
+    { email: @email },
+    { twitter: @twitter }
+  ]
   redirect to('/thanks')
 end
 

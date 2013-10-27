@@ -14,8 +14,8 @@
   <th>Twitter</th>
   <!-- populate one row only -->
   <tr>
-    <td><%= @name %></td>
-    <td><%= @email %></td>
-    <td><%= @twitter %></td>
+    <td><%= session[:value][0][:name] %></td>
+    <td><%= session[:value][1][:email] %></td>
+    <td><%= session[:value][2][:twitter] %></td>
   </tr>
 </table>
