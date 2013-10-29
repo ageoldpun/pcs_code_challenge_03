@@ -13,7 +13,7 @@
   <th>Email</th>
   <th>Twitter</th>
   <!-- When form submits, add Ruby code to generate new table row -->
-  <tr onclick="location.href='/detail'">
+  <tr class="row" onclick="location.href='/detail'">
     <td><%= session[:value][0][:name] %></td>
     <td><%= session[:value][1][:email] %></td>
     <td><%= session[:value][2][:twitter] %></td>
