@@ -8,14 +8,10 @@ get '/' do
 end
 
 post '/' do
-  @name = params[:fullname]
-  @email = params[:email]
-  @twitter = params[:twitter]
-  session[:value] = [
-    { name: @name },
-    { email: @email },
-    { twitter: @twitter }
-  ]
+  session[:form_input] = [] unless session[:form_input]
+  session[:form_input] << { fullname: params[:fullname],
+                            email: params[:email],
+                            twitter: params[:twitter] }
   redirect to('/thanks')
 end
 
@@ -31,7 +27,6 @@ get '/detail' do
   erb :detail
 end
 
-# link '/detail' do
-#   'Return to listing'
-#   erb :suckers
-# end
+get '/detail/:index' do
+  erb :detail, locals: { "index" => params[:index] }
+end
